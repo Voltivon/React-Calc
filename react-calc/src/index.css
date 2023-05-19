@@ -1,0 +1,66 @@
+:root {
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.calculator {
+    display: grid;
+    justify-content: center;
+    margin-top: 200px;;
+    grid-template-columns: repeat(4, 50px);
+    grid-template-rows: minmax(5rem, auto) repeat(5, 3rem);
+}
+
+button {
+    background-color: black;
+}
+
+.calculator > button:hover,
+.calculator > button:focus {
+    background-color: aqua;
+}
+
+.operand {
+   
+    color: white;
+}
+
+.clear-all {
+    grid-column: span 2;
+    color: white;
+}
+
+.delete {
+    color: white;
+}
+
+.digit {
+    color: white;
+}
+
+.equals {
+    grid-column: span 2;
+    color: white;
+}
+
+.output {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: aliceblue;
+    flex-direction: column;
+    grid-column: 1 / -1;
+    padding: .75rem;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.prev-operand {
+    
+    color: red;
+}
+
+.curr-operand {
+   
+    color: red;
+}
